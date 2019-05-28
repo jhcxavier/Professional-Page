@@ -10,10 +10,25 @@ export class Single extends React.Component {
 				<Context.Consumer>
 					{({ store }) => {
 						return (
-							<h1 className="display-4">
-								This will show the demo element: {store.demo[this.props.match.params.theid].title}
-							</h1>
+							<div>
+								<h1>
+									This will show the demo element: {store.demo[this.props.match.params.theid].title}
+								</h1>
+							</div>
 						);
+					}}
+				</Context.Consumer>
+				<Context.Consumer>
+					{({ store }) => {
+						return store.products.map((item, index) => {
+							return (
+								<div key={index} className="card">
+									<div className="card-body">
+										{item.login}+{item.organizations_url}
+									</div>
+								</div>
+							);
+						});
 					}}
 				</Context.Consumer>
 

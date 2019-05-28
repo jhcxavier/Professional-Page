@@ -12,7 +12,8 @@ const getState = ({ getStore, setStore }) => {
 					background: "white",
 					initial: "white"
 				}
-			]
+			],
+			products: []
 		},
 		actions: {
 			changeColor: (index, color) => {
@@ -28,7 +29,8 @@ const getState = ({ getStore, setStore }) => {
 
 				//reset the global store
 				setStore({ demo: demo });
-			}
+			},
+			deleteUser: () => {}
 		}
 	};
 };
