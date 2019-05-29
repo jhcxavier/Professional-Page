@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Context } from "../store/appContext";
 
 export class Navbar extends React.Component {
 	render() {
@@ -7,16 +8,28 @@ export class Navbar extends React.Component {
 			<nav className="navBar">
 				<Link to={"/home"}>
 					<a className="nav-link" href="#">
-						João Henrique Xavier
+						<Context.Consumer>
+							{({ store }) => {
+								return (
+									<div>
+										<div>{store.user[0].name}</div>
+									</div>
+								);
+							}}
+						</Context.Consumer>
 					</a>
 				</Link>
 				<Link to={"/Projects"}>
-					<a className="nav-link" href="#">
+					<a className="nav-link first" href="#">
 						Projects
 					</a>
 				</Link>
-				<a>About</a>
-				<a>Contact</a>
+				<a className="nav-link" href="#">
+					About
+				</a>
+				<a className="nav-link" href="#">
+					Contact
+				</a>
 			</nav>
 		);
 	}

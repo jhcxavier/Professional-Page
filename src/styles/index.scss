@@ -2,9 +2,9 @@
 .navBar {
     height: 30px;
     width: 100%;
-    font-family: 'Great Vibes', cursive;
-    font-size: 30px;
-    margin-top: 50px;
+    font-family: 'Merienda', cursive;
+    font-size: 40px;
+    margin-top: -30px;
     margin-bottom: 50px;
     padding-left: 40px;
 }
@@ -18,6 +18,10 @@
     text-decoration: underline;
 }
 
+.first {
+    margin-left: 300px;
+}
+
 .backgroundDiv {
     position: absolute;
     top: 30px;
@@ -26,4 +30,10 @@
     width: 400px;
     background: #cc9966;
     z-index: -1;
+}
+
+.main-pic {
+    position: absolute;
+    left: 200px;
+    top: 200px;
 }
