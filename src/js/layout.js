@@ -24,7 +24,7 @@ export class Layout extends React.Component {
 					<ScrollToTop>
 						<Navbar />
 						<Switch>
-							<Route exact path="/" component={Home} />
+							<Route exact path="/home" component={Home} />
 							<Route exact path="/projects" component={Projects} />
 							<Route path="/demo" component={Demo} />
 							<Route path="/single/:theid" component={Single} />

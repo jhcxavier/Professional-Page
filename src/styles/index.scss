@@ -1,3 +1,29 @@
-/* 
-    General Styles
-*/
+
+.navBar {
+    height: 30px;
+    width: 100%;
+    font-family: 'Great Vibes', cursive;
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-left: 40px;
+}
+.navBar a {
+    display: inline;
+    color: black;
+    padding-right: 30px;
+}
+.navBar a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.backgroundDiv {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    height: 600px;
+    width: 400px;
+    background: #cc9966;
+    z-index: -1;
+}
