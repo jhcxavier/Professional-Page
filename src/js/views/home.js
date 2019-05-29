@@ -1,5 +1,4 @@
 import React from "react";
-import rigoImage from "../../img/rigo-baby.jpg";
 import "../../styles/home.scss";
 import { Context } from "../store/appContext";
 import Hernan from "../../img/hernan.png";
@@ -9,6 +8,17 @@ export class Home extends React.Component {
 		return (
 			<div className="text-center mt-5">
 				<div className="backgroundDiv" />
+				<img className="main-pic" src={Hernan} alt="Hernan Garcia" />
+
+				<Context.Consumer>
+					{({ store }) => {
+						return (
+							<div>
+								<div>{store.user[0].goal}</div>
+							</div>
+						);
+					}}
+				</Context.Consumer>
 
 				{/* <Context.Consumer>
 					{({ store }) => {

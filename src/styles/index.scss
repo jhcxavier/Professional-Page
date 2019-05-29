@@ -2,9 +2,9 @@
 .navBar {
     height: 30px;
     width: 100%;
-    font-family: 'Great Vibes', cursive;
-    font-size: 30px;
-    margin-top: 50px;
+    font-family: 'Merienda', cursive;
+    font-size: 40px;
+    margin-top: -30px;
     margin-bottom: 50px;
     padding-left: 40px;
 }
@@ -17,6 +17,8 @@
     cursor: pointer;
     text-decoration: underline;
 }
+
+
 
 .backgroundDiv {
     position: absolute;
@@ -32,8 +34,4 @@ footer {
     height: 100px;
     color: white;
     background: black;
-}
-
-footer a {
-    height: 30px;
 }
