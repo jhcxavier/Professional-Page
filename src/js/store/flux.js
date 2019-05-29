@@ -17,16 +17,19 @@ const getState = ({ getStore, setStore }) => {
 			user: [
 				{
 					name: "Hernan Garcia",
-					skills: "JavaScript - React - HTML - CSS",
+					title: "Software Engineer",
+					skills: ["JavaScript", "React", "HTML", "CSS"],
 					goal: "The elite savings excuses into the prize cook What if the broken emotion ate the advice?"
 				},
 				{
 					name: "Vanessa",
+					title: "Web Developer",
 					skills: "JavaScript - React - HTML - CSS",
 					goal: "The elite savings excuses into the prize cook What if the broken emotion ate the advice?"
 				},
 				{
 					name: "João Henrique",
+					title: "Web Developer",
 					skills: "JavaScript - React - HTML - CSS",
 					goal: "The elite savings excuses into the prize cook What if the broken emotion ate the advice?"
 				}

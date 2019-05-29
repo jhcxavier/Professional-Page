@@ -1,15 +1,58 @@
 import React from "react";
-import rigoImage from "../../img/rigo-baby.jpg";
-import "../../styles/home.scss";
-import { Context } from "../store/appContext";
 
-export class Projects extends React.Component {
+const projectDescription = [
+	{
+		name: "Hello World",
+		Tools: "React, CSS, HTML and JS",
+		imgUrl: "https://via.placeholder.com/140x100"
+	},
+
+	{
+		name: "Hello World",
+		Tools: "React, CSS, HTML and JS",
+		imgUrl: "https://via.placeholder.com/140x100"
+	},
+	{
+		name: "Hello World",
+		Tools: "React, CSS, HTML and JS",
+		imgUrl: "https://via.placeholder.com/140x100"
+	},
+	{
+		name: "Hello World",
+		Tools: "React, CSS, HTML and JS",
+		imgUrl: "https://via.placeholder.com/140x100"
+	},
+	{
+		name: "Hello World",
+		Tools: "React, CSS, HTML and JS",
+		imgUrl: "https://via.placeholder.com/140x100"
+	},
+	{
+		name: "Hello World",
+		Tools: "React, CSS, HTML and JS",
+		imgUrl: "https://via.placeholder.com/140x100"
+	}
+];
+
+class Projects extends React.Component {
 	render() {
-		return (
-			<div className="text-center mt-5">
-				<h1>Projects</h1>
-				<p>Some text</p>
-			</div>
-		);
+		return projectDescription.map((item, index) => {
+			return (
+				<div key={index} className="card projects col-3 md-4-mb-2 m-4">
+					<img src={item.imgUrl} className="card-img-top" alt="..." />
+					<div className="card-body">
+						<h5 className="card-title">{item.name}</h5>
+						<p className="card-text">{item.Tools}</p>
+						<a href="#" className="btn btn-primary">
+							Demo
+						</a>
+						<a href="#" className="btn btn-primary float-right">
+							Code
+						</a>
+					</div>
+				</div>
+			);
+		});
 	}
 }
+export default Projects;

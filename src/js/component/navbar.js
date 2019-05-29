@@ -7,19 +7,17 @@ export class Navbar extends React.Component {
 		return (
 			<nav className="navBar">
 				<Link to={"/home"}>
-					<a className="nav-link" href="#">
-						<Context.Consumer>
-							{({ store }) => {
-								return (
-									<div>
-										<div>{store.user[0].name}</div>
-									</div>
-								);
-							}}
-						</Context.Consumer>
-					</a>
+					<Context.Consumer>
+						{({ store }) => {
+							return (
+								<a className="nav-link" href="#">
+									{store.user[0].name}
+								</a>
+							);
+						}}
+					</Context.Consumer>
 				</Link>
-				<Link to={"/Projects"}>
+				<Link to={"/projects"}>
 					<a className="nav-link first" href="#">
 						Projects
 					</a>

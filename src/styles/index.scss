@@ -3,8 +3,8 @@
     height: 30px;
     width: 100%;
     font-family: 'Merienda', cursive;
-    font-size: 40px;
-    margin-top: -30px;
+    font-size: 30px;
+    margin-top: 50px;
     margin-bottom: 50px;
     padding-left: 40px;
 }
@@ -18,10 +18,6 @@
     text-decoration: underline;
 }
 
-.first {
-    margin-left: 300px;
-}
-
 .backgroundDiv {
     position: absolute;
     top: 30px;
@@ -32,8 +28,14 @@
     z-index: -1;
 }
 
-.main-pic {
-    position: absolute;
-    left: 200px;
-    top: 200px;
-}
+.projects {
+    width: 15rem;
+    background-color: orange;
+    margin-top: 300px;
+ }
+ .projects img{
+    height: 120px;
+ }
+ .projects card-body{
+    height: 150;
+ }
