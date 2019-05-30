@@ -4,33 +4,39 @@ const projectDescription = [
 	{
 		name: "Hello World",
 		Tools: "React · CSS · HTML · JS",
-		imgUrl: "https://via.placeholder.com/140x100"
+		imgUrl: "https://via.placeholder.com/140x100",
+		Code: "https://github.com/jhcxavier/Tic-Tac-Toe/blob/master/src/js/App.js"
 	},
 
 	{
 		name: "Hello World",
 		Tools: "React · CSS · HTML · JS",
-		imgUrl: "https://via.placeholder.com/140x100"
+		imgUrl: "https://via.placeholder.com/140x100",
+		Code: "https://github.com/jhcxavier/Traffic-Light-React-/blob/master/src/js/component/TrafficLight.js"
 	},
 	{
 		name: "Hello World",
 		Tools: "React · CSS · HTML · JS",
-		imgUrl: "https://via.placeholder.com/140x100"
+		imgUrl: "https://via.placeholder.com/140x100",
+		Code: ""
 	},
 	{
 		name: "Hello World",
 		Tools: "React · CSS · HTML · JS",
-		imgUrl: "https://via.placeholder.com/140x100"
+		imgUrl: "https://via.placeholder.com/140x100",
+		Code: ""
 	},
 	{
 		name: "Hello World",
 		Tools: "React · CSS · HTML · JS",
-		imgUrl: "https://via.placeholder.com/140x100"
+		imgUrl: "https://via.placeholder.com/140x100",
+		Code: ""
 	},
 	{
 		name: "Hello World",
 		Tools: "React · CSS · HTML · JS",
-		imgUrl: "https://via.placeholder.com/140x100"
+		imgUrl: "https://via.placeholder.com/140x100",
+		Code: ""
 	}
 ];
 
@@ -46,7 +52,7 @@ class Projects extends React.Component {
 						<a href="#" className="btn btn-primary float-left">
 							Demo
 						</a>
-						<a href="#" className="btn btn-primary float-right">
+						<a href={item.Code} className="btn btn-primary float-right">
 							Code
 						</a>
 					</div>
