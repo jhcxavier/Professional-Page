@@ -1,36 +1,24 @@
 const getState = ({ getStore, setStore }) => {
 	return {
 		store: {
-			demo: [
-				{
-					title: "FIRST",
-					background: "white",
-					initial: "white"
-				},
-				{
-					title: "SECOND",
-					background: "white",
-					initial: "white"
-				}
-			],
-			products: [],
-			user: [
+			user: 0,
+			userAPI: [
 				{
 					name: "Hernan Garcia",
 					title: "Software Engineer",
-					skills: ["JavaScript", "React", "HTML", "CSS"],
-					goal: "The elite savings excuses into the prize cook What if the broken emotion ate the advice?"
+					skills: ["JavaScript", "React", "HTML", "CSS", "Bootstrap", "Python", "PHP", "Flask"],
+					goal: "Helping companies reach their goals by serving them great mate."
 				},
 				{
-					name: "Vanessa",
+					name: "Vanessa Fernander",
 					title: "Web Developer",
-					skills: "JavaScript - React - HTML - CSS",
+					skills: ["JavaScript", "React", "HTML", "CSS", "Bootstrap"],
 					goal: "The elite savings excuses into the prize cook What if the broken emotion ate the advice?"
 				},
 				{
 					name: "João Henrique",
 					title: "Web Developer",
-					skills: "JavaScript - React - HTML - CSS",
+					skills: ["JavaScript", "React", "HTML", "CSS", "Bootstrap", "Python", "PHP", "Flask"],
 					goal: "The elite savings excuses into the prize cook What if the broken emotion ate the advice?"
 				}
 			]

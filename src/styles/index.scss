@@ -1,8 +1,10 @@
+body {
+    font-family: 'Merienda', cursive;
+}
 
 .navBar {
     height: 30px;
     width: 100%;
-    font-family: 'Merienda', cursive;
     font-size: 30px;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -28,10 +30,13 @@
     z-index: -1;
 }
 
+.projectsRow {
+    padding-top: 200px;
+}
+
 .projects {
     width: 15rem;
     background-color: orange;
-    margin-top: 300px;
  }
  .projects img{
     height: 120px;
@@ -39,3 +44,13 @@
  .projects card-body{
     height: 150;
  }
+ 
+footer {
+    height: 100px;
+    color: white;
+    background: black;
+}
+
+ul {
+    list-style-image: url('../img/check.gif');
+  }

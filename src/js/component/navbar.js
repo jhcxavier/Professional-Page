@@ -11,7 +11,7 @@ export class Navbar extends React.Component {
 						{({ store }) => {
 							return (
 								<a className="nav-link" href="#">
-									{store.user[0].name}
+									{store.userAPI[store.user].name}
 								</a>
 							);
 						}}

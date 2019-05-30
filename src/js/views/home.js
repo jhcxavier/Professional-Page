@@ -5,41 +5,42 @@ import Hernan from "../../img/hernan.png";
 import Projects from "./projects";
 
 export class Home extends React.Component {
-	state = {
-		user: 0
-	};
-
 	render() {
 		return (
 			<div className="text-center mt-5">
 				<div className="backgroundDiv" />
 
-				<div className="container">
-					<div className="row">
-						<div className="col-1" />
-						<div className="col-3">
-							<img className="main-pic" src={Hernan} alt="Hernan Garcia" />
-						</div>
-						<div className="col-2" />
+				<Context.Consumer>
+					{({ store }) => {
+						return (
+							<div className="container">
+								<div className="row">
+									<div className="col-1" />
 
-						<Context.Consumer>
-							{({ store }) => {
-								return (
-									<div className="col-4">
-										<h1>{store.user[this.state.user].title}</h1>
-										<p>{store.user[this.state.user].goal}</p>
-										<p>{store.user[this.state.user].skills}</p>
+									<div className="col-3">
+										<img className="main-pic" src={Hernan} alt={store.userAPI[store.user].name} />
 									</div>
-								);
-							}}
-						</Context.Consumer>
+									<div className="col-2" />
 
-						<div className="col-2" />
-					</div>
-					<div className="row d-flex justify-content-around">
-						<Projects />
-					</div>
-				</div>
+									<div className="col-5 text-left">
+										<h1>{store.userAPI[store.user].title}</h1>
+										<p>{store.userAPI[store.user].goal}</p>
+										<ul className="position-absolute">
+											{store.userAPI[store.user].skills.map((item, i) => {
+												return <li key="i">{item}</li>;
+											})}
+										</ul>
+									</div>
+
+									<div className="col-1" />
+								</div>
+								<div className="projectsRow row d-flex justify-content-around">
+									<Projects />
+								</div>
+							</div>
+						);
+					}}
+				</Context.Consumer>
 
 				{/* <Context.Consumer>
 					{({ store }) => {
