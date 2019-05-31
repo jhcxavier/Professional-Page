@@ -1,8 +1,6 @@
 import React from "react";
-import "../../styles/home.scss";
 import { Context } from "../store/appContext";
-import Hernan from "../../img/hernan.png";
-import Projects from "./projects";
+import Projects from "../component/projects";
 
 export class Home extends React.Component {
 	render() {
@@ -19,7 +17,7 @@ export class Home extends React.Component {
 
 									<div className="col-3">
 										<img
-											className="main-pic"
+											className="main-pic mt-4"
 											src={require("../../img/" + store.userAPI[store.user].imageName)}
 											alt={store.userAPI[store.user].name}
 										/>
@@ -27,11 +25,21 @@ export class Home extends React.Component {
 									<div className="col-2" />
 
 									<div className="col-5 text-left">
-										<h1>{store.userAPI[store.user].title}</h1>
-										<p>{store.userAPI[store.user].goal}</p>
-										<ul className="position-absolute">
+										<h1 className="mb-3">{store.userAPI[store.user].title}</h1>
+										<p className="mb-3">{store.userAPI[store.user].goal}</p>
+
+										{/* {(arr = store.userAPI[store.user].skills)}
+											{(arr1 = this.arr.slice(0, arr / 2))}
+											{(arr2 = this.arr.slice(arr / 2))} */}
+
+										<ul className="d-inline-block mr-5 ml-5">
 											{store.userAPI[store.user].skills.map((item, i) => {
-												return <li key="i">{item}</li>;
+												return <li key={i}>{item}</li>;
+											})}
+										</ul>
+										<ul className="d-inline-block ml-3">
+											{store.userAPI[store.user].skills.map((item, i) => {
+												return <li key={i}>{item}</li>;
 											})}
 										</ul>
 									</div>

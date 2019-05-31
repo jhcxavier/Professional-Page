@@ -17,11 +17,9 @@ export class Navbar extends React.Component {
 						}}
 					</Context.Consumer>
 				</Link>
-				<Link to={"/projects"}>
-					<a className="nav-link first" href="#">
-						Projects
-					</a>
-				</Link>
+				<a className="nav-link first" href="#projects">
+					Projects
+				</a>
 				<a className="nav-link" href="#">
 					About
 				</a>
