@@ -1,6 +1,5 @@
 import React from "react";
 
-
 class Projects extends React.Component {}
 
 export default Projects;
@@ -8,8 +7,8 @@ export default Projects;
 export class Home extends React.Component {
 	render() {
 		return (
-       <div class="container1">
-                <form action="action_page.php">
+
+                <form action="/action_page.php" method="get">
 
                     <label for="fname">First Name<label/>
                         <input type="text" id="fname" name="firstname" placeholder="Your name.."/>
@@ -26,8 +25,4 @@ export class Home extends React.Component {
 
                         <input type="submit" value="Done? Click Me"/>
                     <input type="submit" value="Submit"/>
-            </form>
-        </div>
-        }
-    }
-)
+
