@@ -5,7 +5,7 @@ import Projects from "../component/projects";
 export class Home extends React.Component {
 	render() {
 		return (
-			<div className="text-center mt-5">
+			<div className="text-center mt-2">
 				<div className="backgroundDiv" />
 
 				<Context.Consumer>
@@ -17,7 +17,7 @@ export class Home extends React.Component {
 
 									<div className="col-3">
 										<img
-											className="main-pic mt-4"
+											className="main-pic mt-5 pt-4"
 											src={require("../../img/" + store.userAPI[store.user].imageName)}
 											alt={store.userAPI[store.user].name}
 										/>
@@ -25,8 +25,8 @@ export class Home extends React.Component {
 									<div className="col-2" />
 
 									<div className="col-5 text-left">
-										<h1 className="mb-3">{store.userAPI[store.user].title}</h1>
-										<p className="mb-3">{store.userAPI[store.user].goal}</p>
+										<h1 className="mb-5">{store.userAPI[store.user].title}</h1>
+										<p className="mb-5">{store.userAPI[store.user].goal}</p>
 
 										{/* {(arr = store.userAPI[store.user].skills)}
 											{(arr1 = this.arr.slice(0, arr / 2))}
