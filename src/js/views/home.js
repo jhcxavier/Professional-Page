@@ -18,7 +18,11 @@ export class Home extends React.Component {
 									<div className="col-1" />
 
 									<div className="col-3">
-										<img className="main-pic" src={Hernan} alt={store.userAPI[store.user].name} />
+										<img
+											className="main-pic"
+											src={require("../../img/" + store.userAPI[store.user].imageName)}
+											alt={store.userAPI[store.user].name}
+										/>
 									</div>
 									<div className="col-2" />
 
@@ -41,18 +45,6 @@ export class Home extends React.Component {
 						);
 					}}
 				</Context.Consumer>
-
-				{/* <Context.Consumer>
-					{({ store }) => {
-						return store.products.map((item, index) => {
-							return (
-								<div key={index}>
-									{item.login}+{item.organizations_url}
-								</div>
-							);
-						});
-					}}
-				</Context.Consumer> */}
 			</div>
 		);
 	}
