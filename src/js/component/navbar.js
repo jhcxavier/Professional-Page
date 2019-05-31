@@ -9,11 +9,7 @@ export class Navbar extends React.Component {
 				<Link to={"/home"}>
 					<Context.Consumer>
 						{({ store }) => {
-							return (
-								<a className="nav-link" href="#">
-									{store.userAPI[store.user].name}
-								</a>
-							);
+							return store.userAPI[store.user].name;
 						}}
 					</Context.Consumer>
 				</Link>

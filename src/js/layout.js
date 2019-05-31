@@ -23,9 +23,7 @@ export class Layout extends React.Component {
 						<Navbar />
 						<Switch>
 							<Route exact path="/home" component={Home} />
-							<div className="row d-flex justify-content-around">
-								<Route exact path="/projects" component={Projects} />
-							</div>
+							<Route exact path="/" component={Home} />
 							<Route render={() => <h1>Not found!</h1>} />
 						</Switch>
 						<Footer />

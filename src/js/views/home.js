@@ -11,7 +11,6 @@ export class Home extends React.Component {
 				<Context.Consumer>
 					{({ store }) => {
 						return (
-							store.userAPI &&
 							store.userAPI && (
 								<div className="container">
 									<div className="row">
