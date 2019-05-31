@@ -57,7 +57,11 @@ class Projects extends React.Component {
 								<a href="#" className="btn btn-primary float-left">
 									Demo
 								</a>
-								<a href={item.Code} className="btn btn-primary float-right">
+								<a
+									href={item.Code}
+									target="_blank"
+									rel="noopener noreferrer"
+									className="btn btn-primary float-right">
 									Code
 								</a>
 							</div>
