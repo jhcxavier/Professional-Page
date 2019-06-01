@@ -6,7 +6,9 @@ export class Home extends React.Component {
 	render() {
 		return (
 			<div className="text-center mt-2">
-				<div className="backgroundDiv" />
+				<div className="backgroundDiv">
+					<img src="https://blog.pusher.com/wp-content/uploads/2018/06/vscode-jsdev-wallaby.gif" />
+				</div>
 
 				<Context.Consumer>
 					{({ store }) => {
