@@ -2,16 +2,17 @@ import React from "react";
 
 const projectDescription = [
 	{
-		name: "Hello World",
+		name: "Tic-Tac-Toe",
 		Tools: "React · CSS · HTML · JS",
-		imgUrl: "https://via.placeholder.com/140x100",
+		imgUrl:
+			"https://previews.123rf.com/images/bilderundvektor/bilderundvektor1107/bilderundvektor110700078/10034033-tic-tac-toe-game.jpg",
 		Code: "https://github.com/jhcxavier/Tic-Tac-Toe/blob/master/src/js/App.js"
 	},
 
 	{
-		name: "Hello World",
+		name: "Traffic Light",
 		Tools: "React · CSS · HTML · JS",
-		imgUrl: "https://via.placeholder.com/140x100",
+		imgUrl: "https://assets3.thrillist.com/v1/image/1797521/size/tmg-article_default_mobile.jpg",
 		Code: "https://github.com/jhcxavier/Traffic-Light-React-/blob/master/src/js/component/TrafficLight.js"
 	},
 	{
