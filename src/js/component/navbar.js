@@ -16,10 +16,10 @@ export class Navbar extends React.Component {
 				<a className="nav-link first" href="#projects">
 					Projects
 				</a>
-				<a className="nav-link" href="#">
+				<a className="nav-link" href="#about">
 					About
 				</a>
-				<a className="nav-link" href="#">
+				<a className="nav-link" href="#contact">
 					Contact
 				</a>
 			</nav>
