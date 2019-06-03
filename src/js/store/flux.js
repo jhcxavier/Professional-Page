@@ -16,8 +16,8 @@ const getState = ({ getStore, setStore }) => {
 					name: "Vanessa Fernander",
 					title: "Web Developer",
 					skills: ["JavaScript", "React", "HTML", "CSS", "Bootstrap"],
-					goal: "The elite savings excuses into the prize cook What if the broken emotion ate the advice?",
-					imageName: "hernan.png"
+					goal: "To create a collaborative Class Project, Professional Identity Website",
+					imageName: "https://covers.audiobooks.com/images/covers/full/9781598874983.jpg"
 				},
 				{
 					name: "João Henrique",
