@@ -1,7 +1,9 @@
 import React from "react";
+import { Intro } from "./component/intro";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import ScrollToTop from "./component/scrollToTop";
 
+//import { Intro } from "./component/intro";
 import { Home } from "./views/home";
 import Projects from "./component/projects";
 import injectContext from "./store/appContext";
@@ -22,8 +24,9 @@ export class Layout extends React.Component {
 					<ScrollToTop>
 						<Navbar />
 						<Switch>
+							<Route exact path="/intro" component={Intro} />
+							<Route exact path="/" component={Intro} />
 							<Route exact path="/home" component={Home} />
-							<Route exact path="/" component={Home} />
 							<Route render={() => <h1>Not found!</h1>} />
 						</Switch>
 						<Footer />
