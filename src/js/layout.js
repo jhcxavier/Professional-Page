@@ -5,11 +5,12 @@ import ScrollToTop from "./component/scrollToTop";
 
 import { Home } from "./views/home";
 import { Registration } from "./component/registration";
-import Projects from "./component/projects";
-import injectContext from "./store/appContext";
+import { Projects } from "./component/projects";
+import { InjectContext } from "./store/appContext";
 
 //import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
+import { LoginFooter } from "./component/loginFooter";
 
 //create your first component
 export class Layout extends React.Component {
