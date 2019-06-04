@@ -1,20 +1,13 @@
 import React from "react";
+import { Form, InputGroup, Button } from "react-bootstrap/Form";
 
-
-class Projects extends React.Component {}
-
-export default Projects;
-
-export class Home extends React.Component {
+export class Registration extends React.Component {
 	render() {
-		return (
-            <div />
+		return <p>hello</p>;
+	}
+}
 
-        )}
-    }
-
-
-           /* <div>
+/* <div>
                 <div className="input-group mb-3">
                     <div className="input-group-prepend">
                         <span className="input-group-text" id="inputGroup-sizing-default">Full Name</span>

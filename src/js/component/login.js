@@ -45,9 +45,11 @@ export class Login extends React.Component {
 					</Form.Group>
 
 					<div className="float-right">
-						<Button className="p-1 pr-4 pl-4 secondary" type="submit">
-							Register
-						</Button>
+						<Link to={"/registration"}>
+							<Button className="p-1 pr-4 pl-4 secondary" type="submit">
+								Register
+							</Button>
+						</Link>
 					</div>
 				</Form>
 			</div>

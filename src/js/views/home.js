@@ -1,6 +1,7 @@
 import React from "react";
 import { Context } from "../store/appContext";
 import Projects from "../component/projects";
+import { Navbar } from "../component/navbar";
 
 export class Home extends React.Component {
 	render() {
