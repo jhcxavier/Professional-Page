@@ -5,7 +5,7 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Form";
 import ButtonToolbar from "react-bootstrap/Form";
 
-export class Intro extends React.Component {
+export class Login extends React.Component {
 	render() {
 		return (
 			//<div className="stylingIntro">
