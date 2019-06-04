@@ -8,8 +8,13 @@ export default Projects;
 export class Home extends React.Component {
 	render() {
 		return (
+            <div />
 
-            <div>
+        )}
+    }
+
+
+           /* <div>
                 <div className="input-group mb-3">
                     <div className="input-group-prepend">
                         <span className="input-group-text" id="inputGroup-sizing-default">Full Name</span>
@@ -46,7 +51,4 @@ export class Home extends React.Component {
                     </div>
                     <input type="text" className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" />
                 </div>
-            </div>
-        )}
-    }
-
+            </div>*/
