@@ -6,7 +6,7 @@ import ScrollToTop from "./component/scrollToTop";
 import { Home } from "./views/home";
 import { Registration } from "./component/registration";
 import { Projects } from "./component/projects";
-import { InjectContext } from "./store/appContext";
+import injectContext from "./store/appContext";
 
 //import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
