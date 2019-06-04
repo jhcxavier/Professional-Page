@@ -8,7 +8,7 @@ const getState = ({ getStore, setStore }) => {
 					title: "Software Engineer",
 					skills: ["JavaScript", "React", "HTML", "CSS", "Bootstrap", "Python", "PHP", "Flask"],
 					goal: "Helping companies reach their goals by serving them great mate.",
-					imageURL: "../../img/hernan.png",
+					imageURL: "http://lorempixel.com/200/200",
 					linkedin: "https://www.linkedin.com/in/hernan-garcia-448400186/",
 					github: "https://github.com/hernanjkd",
 					boxColor: "#cc9966",
