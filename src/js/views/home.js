@@ -19,7 +19,13 @@ export class Home extends React.Component {
 										<div className="col-3">
 											<img
 												className="main-pic mt-5 pt-4"
-												src={require("../../img/" + store.userAPI[store.user].imageName)}
+												// {
+												// 	if (store.userAPI[store.user].imageURL)
+												// }
+												src={store.userAPI[store.user].imageURL}
+												// src={require(store.userAPI[store.user].imageURL)}
+												// src={require("../../img/" + store.userAPI[store.user].imageName)}
+												// src={require("../../img/hernan.png")}
 												alt={store.userAPI[store.user].name}
 											/>
 										</div>

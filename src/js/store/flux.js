@@ -1,30 +1,38 @@
 const getState = ({ getStore, setStore }) => {
 	return {
 		store: {
-			user: 0,
+			user: 1,
 			userAPI: [
 				{
 					name: "Hernan Garcia",
 					title: "Software Engineer",
 					skills: ["JavaScript", "React", "HTML", "CSS", "Bootstrap", "Python", "PHP", "Flask"],
 					goal: "Helping companies reach their goals by serving them great mate.",
-					imageName: "hernan.png",
+					imageURL: "../../img/hernan.png",
 					linkedin: "https://www.linkedin.com/in/hernan-garcia-448400186/",
-					github: "https://github.com/hernanjkd"
+					github: "https://github.com/hernanjkd",
+					boxColor: "#cc9966",
+					imageName: "hernan.png"
 				},
 				{
 					name: "Vanessa Fernander",
 					title: "Web Developer",
 					skills: ["JavaScript", "React", "HTML", "CSS", "Bootstrap"],
 					goal: "To create a collaborative Class Project, Professional Identity Website",
-					imageName: "https://covers.audiobooks.com/images/covers/full/9781598874983.jpg"
+					imageURL: "https://covers.audiobooks.com/images/covers/full/9781598874983.jpg",
+					linkedin: "https://www.linkedin.com/in/hernan-garcia-448400186/",
+					github: "https://github.com/hernanjkd",
+					boxColor: "#cc9966"
 				},
 				{
 					name: "João Henrique",
 					title: "Web Developer",
 					skills: ["JavaScript", "React", "HTML", "CSS", "Bootstrap", "Python", "PHP", "Flask"],
 					goal: "The elite savings excuses into the prize cook What if the broken emotion ate the advice?",
-					imageName: "hernan.png"
+					imageURL: "hernan.png",
+					linkedin: "https://www.linkedin.com/in/hernan-garcia-448400186/",
+					github: "https://github.com/hernanjkd",
+					boxColor: "red"
 				}
 			]
 		},

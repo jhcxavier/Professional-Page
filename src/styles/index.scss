@@ -53,37 +53,40 @@ footer {
 
 ul {
     list-style-image: url('../img/check.gif');
-  }
-  .submit {
-
-width: 100%;
-  padding: 12px;
-  color:green;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical
-  }
-
- .p1 {
-  text-indent: 50px;
-}
-.p2{
-  text-indent: 50px;
 }
 
+.submit {
+    width: 100%;
+    padding: 12px;
+    color:green;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical
+}
 
-.container1
-{
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-  background-color: #f2f2f2;
+.p1 {
+    text-indent: 50px;
+}
+.p2 {
+    text-indent: 50px;
+}
+
+
+.container1 {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    background-color: #f2f2f2;
+}
+
+.imgshadow {
+    box-shadow: 10px 10px 10px black;
 }
