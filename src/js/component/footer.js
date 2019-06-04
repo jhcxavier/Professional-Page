@@ -11,8 +11,5 @@ export const Footer = () => (
 		<a className="email-ic mr-5" role="button">
 			<i className="far fa-lg fa-envelope" />
 		</a>
-		<p>
-			<span>© 2019 **COMPANIES NAME** ALL RIGHTS RESERVED</span>
-		</p>
 	</footer>
 );
