@@ -7,7 +7,7 @@ import Team from "../../img/pwp-team.png";
 
 export const Navbar = () => {
 	const path = window.location.pathname;
-	if (path === "/login" || path === "/registration") {
+	if (path === "/" || path === "/login" || path === "/registration") {
 		return (
 			<nav className="navbar">
 				<img src={Logo} />

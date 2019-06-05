@@ -47,9 +47,16 @@ body {
 
 footer {
     background: black;
+    color: white;
 }
 footer a {
     color: white;
+}
+
+.stick-bottom {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
 }
 
 .submit {

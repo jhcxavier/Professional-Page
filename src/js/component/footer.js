@@ -4,9 +4,9 @@ import { Context } from "../store/appContext";
 
 export const Footer = () => {
 	const path = window.location.pathname;
-	if (path === "/login" || path === "/registration") {
+	if (path === "/" || path === "/login" || path === "/registration") {
 		return (
-			<footer className="mt-auto py-3 text-center">
+			<footer className="stick-bottom mt-auto py-3 text-center">
 				<span>© 2019 PWP ALL RIGHTS RESERVED</span>
 			</footer>
 		);
