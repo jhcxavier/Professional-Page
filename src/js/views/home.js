@@ -15,8 +15,6 @@ export class Home extends React.Component {
 	render() {
 		return (
 			<div className="">
-				<div className="backgroundDiv" />
-
 				<Context.Consumer>
 					{({ store }) => {
 						const skills = store.user.skills;
