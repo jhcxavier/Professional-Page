@@ -2,7 +2,13 @@ import React from "react";
 import { Form, InputGroup, Button } from "react-bootstrap/Form";
 
 export class Registration extends React.Component {
+<<<<<<< HEAD
 	render() {}
+=======
+	render() {
+		return <p>This is where the registration form goes.</p>;
+	}
+>>>>>>> 056f39b4175cabbb0fc3176571f9d0c917aa490a
 }
 return (
     <div/>

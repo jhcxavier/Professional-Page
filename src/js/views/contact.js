@@ -19,7 +19,10 @@ export class Contact extends React.Component {
 					id="message"
 					name="message"
 					placeholder="Please leave your full contact information and detailed message"
+<<<<<<< HEAD
 					//style="height:200px"
+=======
+>>>>>>> 056f39b4175cabbb0fc3176571f9d0c917aa490a
 				/>
 
 				<input type="submit" value="Done? Click Me" />

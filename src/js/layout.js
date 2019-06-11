@@ -1,19 +1,24 @@
 import React from "react";
-import { Login } from "./component/login";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import ScrollToTop from "./component/scrollToTop";
 
+<<<<<<< HEAD
 import { Home } from "./views/home";
 import { About } from "./views/about";
 import { Contact } from "./views/contact";
 
-import { Registration } from "./component/registration";
-import { Projects } from "./component/projects";
+=======
 import injectContext from "./store/appContext";
 
-//import { Navbar } from "./component/navbar";
+import { Login } from "./component/login";
+>>>>>>> 056f39b4175cabbb0fc3176571f9d0c917aa490a
+import { Registration } from "./component/registration";
+import { Home } from "./views/home";
+import { Projects } from "./component/projects";
+import { Contact } from "./views/contact";
+
+import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
-import { LoginFooter } from "./component/loginFooter";
 
 //create your first component
 export class Layout extends React.Component {
@@ -23,18 +28,23 @@ export class Layout extends React.Component {
 		const basename = process.env.BASENAME || "";
 
 		return (
-			<div className="d-flex flex-column h-100">
+			<div className="">
 				<BrowserRouter basename={basename}>
 					<ScrollToTop>
+						<Navbar />
 						<Switch>
-							<Route exact path="/login" component={Login} />
 							<Route exact path="/" component={Login} />
+<<<<<<< HEAD
 							<Route exact path="/about" component={About} />
 							<Route exact path="/contact" component={Contact} />
-							<Route exact path="/home" component={Home} />
+=======
+							<Route exact path="/login" component={Login} />
 							<Route exact path="/registration" component={Registration} />
-							{/*<Route exact path="/contact" component={Contact} />
-							//<Route exact path="/about" component={About} />*/}
+
+>>>>>>> 056f39b4175cabbb0fc3176571f9d0c917aa490a
+							<Route exact path="/home" component={Home} />
+							<Route exact path="/contact" component={Contact} />
+
 							<Route render={() => <h1>Not found!</h1>} />
 						</Switch>
 

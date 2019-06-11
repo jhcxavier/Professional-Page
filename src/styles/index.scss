@@ -20,16 +20,6 @@ body {
     text-decoration: underline;
 }
 
-.backgroundDiv {
-    position: absolute;
-    top: 30px;
-    left: 20px;
-    height: 600px;
-    width: 400px;
-    background: #cc9966;
-    z-index: -1;
-}
-
 .projectsRow {
     padding-top: 130px;
 }
@@ -37,22 +27,26 @@ body {
 .projects {
     width: 15rem;
     background-color: rgb(214, 214, 214);
- }
- .projects img{
+}
+.projects img{
     height: 145px;
- }
- .projects card-body{
+}
+.projects card-body{
     height: 150;
- }
-
-footer {
-    height: 50px;
-    color: white;
-    background: black;
 }
 
-ul {
-    list-style-image: url('../img/check.gif');
+footer {
+    background: black;
+    color: white;
+}
+footer a {
+    color: white;
+}
+
+.stick-bottom {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
 }
 
 .submit {
@@ -88,24 +82,10 @@ ul {
 }
 
 .imgshadow {
-    box-shadow: 10px 10px 10px black;
+    box-shadow: 5px 5px 5px black;
 }
 
 .stylingIntro{
-
     height: 100%;
     width: 100%;
 }
-
-.loginFooter {
-    width: 1080px;
-    margin: 0 auto;
-    color: white;
-    background-color:black;
-}
-/*background-repeat: no-repeat;
-background-position: left center;
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;*/

@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Context } from "../store/appContext";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Form";
 
@@ -8,19 +7,22 @@ export class Login extends React.Component {
 	render() {
 		return (
 			//<div className="stylingIntro">
-			<div className="row imageStyle container">
+			<div className="row imageStyle container mt-5 pt-3">
 				<div className="col-1" />
 				<div className="col-6">
-					<h3>Conect with companies</h3>
-					<div>
-						<i className="far fa-file-alt p-3"> Create a Portfolio</i>
-					</div>
-					<div>
-						<i className="fas fa-file-code p-3"> Update Projects</i>
-					</div>
-					<div>
-						<i className="fas fa-project-diagram p-3"> Find your next Opportunity</i>
-					</div>
+					<h3>Connect with companies</h3>
+					<h5>
+						<i className="far fa-file-alt p-3" />
+						Create a Portfolio
+					</h5>
+					<h5>
+						<i className="fas fa-file-code p-3" />
+						Update Projects
+					</h5>
+					<h5>
+						<i className="fas fa-project-diagram p-3" />
+						Find your next Opportunity
+					</h5>
 				</div>
 				<div className="col-1" />
 				<Form className="col-4">
