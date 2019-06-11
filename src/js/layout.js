@@ -4,6 +4,9 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import ScrollToTop from "./component/scrollToTop";
 
 import { Home } from "./views/home";
+import { About } from "./views/about";
+import { Contact } from "./views/contact";
+
 import { Registration } from "./component/registration";
 import { Projects } from "./component/projects";
 import injectContext from "./store/appContext";
@@ -26,13 +29,15 @@ export class Layout extends React.Component {
 						<Switch>
 							<Route exact path="/login" component={Login} />
 							<Route exact path="/" component={Login} />
-
+							<Route exact path="/about" component={About} />
+							<Route exact path="/contact" component={Contact} />
 							<Route exact path="/home" component={Home} />
 							<Route exact path="/registration" component={Registration} />
 							{/*<Route exact path="/contact" component={Contact} />
 							//<Route exact path="/about" component={About} />*/}
 							<Route render={() => <h1>Not found!</h1>} />
 						</Switch>
+
 						<Footer />
 					</ScrollToTop>
 				</BrowserRouter>

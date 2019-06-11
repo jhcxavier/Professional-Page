@@ -16,8 +16,8 @@ export class Navbar extends React.Component {
 				<a className="nav-link first" href="#projects">
 					Projects
 				</a>
-				<Link to={"/views/about"}>About</Link>
-				<Link to={"/views/contact"}>Contact</Link>
+				<Link to={"/about"}>About</Link>
+				<Link to={"/contact"}>Contact</Link>
 			</nav>
 		);
 	}

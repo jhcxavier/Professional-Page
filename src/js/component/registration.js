@@ -2,46 +2,32 @@ import React from "react";
 import { Form, InputGroup, Button } from "react-bootstrap/Form";
 
 export class Registration extends React.Component {
-	render() {
-		return <p>hello</p>;
-	}
+	render() {}
 }
+return (
+    <div/>
+	<form>
+		<div className="input-group">
+			<div className="input-group-prepend">
+				<span className="input-group-text">First and Last name</span>
+			</div>
+			<input type="text" aria-label="First name" className="form-control" />
+			<input type="text" aria-label="Last name" className="form-control" />
+		</div>
+		<div className="form-group">
+			<label htmlFor="exampleFormControlInput1">Email address</label>
+			<input type="email" className="form-control" id="exampleFormControlInput1" placeholder="name@example.com" />
 
-/* <div>
-                <div className="input-group mb-3">
-                    <div className="input-group-prepend">
-                        <span className="input-group-text" id="inputGroup-sizing-default">Full Name</span>
-                    </div>
-                    <input type="text" className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" />
-                </div>
-                <div className="input-group mb-3">
-                    <div className="input-group-prepend">
-                        <span className="input-group-text" id="inputGroup-sizing-default">Title</span>
-                    </div>
-                    <input type="text" className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" />
-                </div>
-                <div className="input-group mb-3">
-                    <div className="input-group-prepend">
-                        <span className="input-group-text" id="inputGroup-sizing-default">Skills</span>
-                    </div>
-                    <input type="text" className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" />
-                </div>
-                <div className="input-group mb-3">
-                    <div className="input-group-prepend">
-                        <span className="input-group-text" id="inputGroup-sizing-default">Goal</span>
-                    </div>
-                    <input type="text" className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" />
-                </div>
-                <div className="input-group mb-3">
-                    <div className="input-group-prepend">
-                        <span className="input-group-text" id="inputGroup-sizing-default">Place Holder</span>
-                    </div>
-                    <input type="text" className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" />
-                </div>
-                <div className="input-group mb-3">
-                    <div className="input-group-prepend">
-                        <span className="input-group-text" id="inputGroup-sizing-default">Place Holder</span>
-                    </div>
-                    <input type="text" className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" />
-                </div>
-            </div>*/
+			<div className="form-group">
+				<label htmlFor="exampleFormControlSelect2">Please leave meassage below:</label>
+			</div>
+			<div>
+				<button type="button" className="btn btn-primary btn-sm">
+					Submit
+				</button>
+			</div>
+		</div>
+	</form>
+ <div/>
+)
+

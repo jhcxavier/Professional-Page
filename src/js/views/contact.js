@@ -1,10 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-class Projects extends React.Component {}
-
-export default Projects;
-
-export class Home extends React.Component {
+export class Contact extends React.Component {
 	render() {
 		return (
 			<div>
@@ -22,11 +19,14 @@ export class Home extends React.Component {
 					id="message"
 					name="message"
 					placeholder="Please leave your full contact information and detailed message"
-					style="height:200px"
+					//style="height:200px"
 				/>
 
 				<input type="submit" value="Done? Click Me" />
 				<input type="submit" value="Submit" />
+				<Link to={"/Home"}>
+					<button>home</button>
+				</Link>
 			</div>
 		);
 	}
