@@ -2,16 +2,9 @@ import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import ScrollToTop from "./component/scrollToTop";
 
-<<<<<<< HEAD
-import { Home } from "./views/home";
-import { About } from "./views/about";
-import { Contact } from "./views/contact";
-
-=======
 import injectContext from "./store/appContext";
 
 import { Login } from "./component/login";
->>>>>>> 056f39b4175cabbb0fc3176571f9d0c917aa490a
 import { Registration } from "./component/registration";
 import { Home } from "./views/home";
 import { Projects } from "./component/projects";
@@ -34,14 +27,9 @@ export class Layout extends React.Component {
 						<Navbar />
 						<Switch>
 							<Route exact path="/" component={Login} />
-<<<<<<< HEAD
-							<Route exact path="/about" component={About} />
-							<Route exact path="/contact" component={Contact} />
-=======
 							<Route exact path="/login" component={Login} />
 							<Route exact path="/registration" component={Registration} />
 
->>>>>>> 056f39b4175cabbb0fc3176571f9d0c917aa490a
 							<Route exact path="/home" component={Home} />
 							<Route exact path="/contact" component={Contact} />
 
