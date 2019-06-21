@@ -44,7 +44,6 @@ export class Login extends React.Component {
 					<Form.Group controlId="formBasicChecbox">
 						<Form.Check type="checkbox" className="pt-3" label="Agreed with the Terms and Conditions" />
 					</Form.Group>
-
 					<div className="float-right">
 						<Link to={"/registration"}>
 							<Button className="p-1 pr-4 pl-4 secondary" type="submit">
@@ -53,14 +52,104 @@ export class Login extends React.Component {
 						</Link>
 					</div>
 				</Form>
+				<div className="form-row">
+					<div className="form-group col-md-1">
+						<div className="container mt-3">
+							<div className="first media mt-3">
+								<img
+									src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/201802/portfolio.jpeg?FiDuEq_3VnAh8wxpLykw3aWI.eIslcbH"
+									className="align-self-center mr-3"
+								/>
+								<div className="media-body">
+									<h4>Create your portfolio in a few clicks!!!</h4>
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+										incididunt ut labore et dolore magna aliqua.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div className="form-row">
+					<div className="form-group col-md-1">
+						<div className="second media mt-3">
+							<img
+								src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/201802/portfolio.jpeg?FiDuEq_3VnAh8wxpLykw3aWI.eIslcbH"
+								className="align-self-center mr-3 width"
+							/>
+							<div className="container mt-3">
+								<div className="media-body">
+									<h4>Quick Resume Setup</h4>
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+										incididunt ut labore et dolore magna aliqua.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div className="form-row">
+					<div className="form-group col-md-1">
+						<div className="third media mt-3">
+							<img
+								src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/201802/portfolio.jpeg?FiDuEq_3VnAh8wxpLykw3aWI.eIslcbH"
+								className="align-self-start mr-3"
+							/>
+							<div className="media-body">
+								<h4>Business cards made easy</h4>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+									incididunt ut labore et dolore magna aliqua.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div className="form-row">
+					<div className="form-group col-md-1">
+						<div className="fourth media mt-3">
+							<img
+								src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/201802/portfolio.jpeg?FiDuEq_3VnAh8wxpLykw3aWI.eIslcbH"
+								className="align-self-start mr-3"
+							/>
+							<div className="media-body">
+								<h4>Jobs click and apply!!</h4>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+									incididunt ut labore et dolore magna aliqua.
+								</p>
+							</div>
+						</div>
+						<div className="form-row">
+							<div className="form-group col-md-1">
+								<div className="five media mt-3">
+									<img
+										src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/201802/portfolio.jpeg?FiDuEq_3VnAh8wxpLykw3aWI.eIslcbH"
+										className="align-self-start mr-3"
+									/>
+									<div className="media-body">
+										<h4>SHOW EMPLOYERS YOUR TALENT</h4>
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+											tempor incididunt ut labore et dolore magna aliqua.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
-			//	</div>
 		);
 	}
 }
 
-/*
-			<Navbar className="bg-light justify-content-between">
+{
+	/*<Navbar className="bg-light justify-content-between">
 				<Form inline>
 					<InputGroup>
 						<InputGroup.Prepend>
@@ -74,3 +163,4 @@ export class Login extends React.Component {
 					<Button type="submit">Submit</Button>
 				</Form>
 			</Navbar>*/
+}
